@@ -1,0 +1,92 @@
+body{
+    background-image: url(background3.jpg); 
+}
+
+
+h1{
+    color: whitesmoke;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 70px;
+    word-spacing: 2px;
+}
+
+
+p{
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: whitesmoke;
+}
+
+.plan{
+    width: 80vw;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    width: 75%;
+    align-items: right;
+}
+
+.para{
+    display: flex;
+    align-items: center;
+}
+
+
+#aSide {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 7%;
+}
+
+
+/* This styles the 3D object inserted in the aside container */
+
+#aSide model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+#rSide {
+    display: flex;
+    height: 600px;
+    width: 600px;
+    border-radius: 50px;
+    align-items: right;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 10%;
+}
+
+#content {
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    left: 5%;
+    top: calc(50% - 250px);
+}
+
+
+/* This styles the heading in the 3D description */
+
+#content h2 {
+    font-size: 140px;
+    color: grey;
+}
+
+
+/* This styles the paragraph in the 3D description*/
+
+#content p {
+    font-size: 20px;
+    color: rgb(189, 189, 189);
+}

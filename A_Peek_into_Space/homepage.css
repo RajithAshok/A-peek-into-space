@@ -1,0 +1,166 @@
+body{
+    background-image: url(background3.jpg);
+    text-align: center;
+}
+
+
+h1{
+    color: whitesmoke;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 70px;
+    word-spacing: 2px;
+}
+
+
+h2{
+    color: whitesmoke;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 35px;
+    word-spacing: 2px;
+}
+
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:300px;
+    background-position: 0px;
+}
+
+
+.card{
+    color:whitesmoke;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+    width: 300px;
+    height:400px;
+    background-color: azure;
+    text-align: center;
+    margin: 20px;
+    border-width : 10px;
+    border-radius : 20px;
+    padding-top : 20px;
+    box-shadow: 0px 0px 50px #3C415C;
+    background-color: #1B2430;
+
+}
+
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one{
+    background-image: url(HD_189733_b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+
+
+.two{
+    background-image: url(55_cancri_e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+
+
+.three{
+    background-image: url(KOI_55b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+
+.four{
+    background-image: url(Kepler_1192b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+
+
+.five{
+    background-image: url(jupiter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+  
+
+.six{
+    background-image: url(mercury.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.card .content {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    color: whitesmoke;
+    padding: .5em;
+    min-width: 10rem;
+}
+.card:hover{
+    background-blend-mode:soft-light;
+}
+.card:hover .content {
+    opacity: 1.5;
+    display: block;
+    animation: Slide_Up 1.0s ease;
+}
+
+@keyframes Slide_Up{
+    0%{
+        transform:translateY(200px);
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity: 1.5;
+    }
+}
+
+#aSide {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 7%;
+}
+
+
+/* This styles the 3D object inserted in the aside container */
+
+#aSide model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
